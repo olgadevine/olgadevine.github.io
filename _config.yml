@@ -1,0 +1,4 @@
+url: https://olgadevine.github.io
+permalink: /:categories/:title/
+plugins:
+  - jekyll-redirect-from

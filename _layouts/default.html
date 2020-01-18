@@ -1,0 +1,75 @@
+<!--
+    Created: 12/18/2019
+    Author: John Devine
+    Description: Personal site for Olga Devine
+    Last Updated: {{ site.time | date: "%m/%d/%Y" }}
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        {% unless page.title == 'Home' %}
+            {{ page.title }} - 
+        {% endunless %}
+        {% if page.category == 'blog' %}
+            Blog - 
+        {% endif %}
+        {% if page.category == 'portfolio' %}
+            Portfolio - 
+        {% endif %}
+        Olga Devine
+    </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&amp;display=swap">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/slick/slick.css"/>
+    <link rel="stylesheet" href="{{ site.url }}/assets/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css"/>
+</head>
+<body>
+    <div class="side-bar">
+        <header>
+            <h1>
+                <a href="{{ site.url }}" title="Home">Olga Devine</a>
+            </h1>
+            <nav id="site-nav">
+                <ul>
+                    <li><a href="{{ site.url }}" title="Home">Home</a></li>
+                    <!-- <li><a href="{{ site.url }}/portfolio/" title="Portfolio">Portfolio</a></li> -->
+                    <!-- <li><a href="{{ site.url }}/blog/" title="Blog">Blog</a></li> -->
+                    <!-- <li><a href="{{ site.url }}/contact/" title="Contact">Contact</a></li> -->
+                    <li><a href="{{ site.url }}/portfolio/social-media" title="Portfolio">Social Media</a></li>
+                    <li><a href="{{ site.url }}/portfolio/photography" title="Portfolio">Photography</a></li>
+                </ul>
+            </nav>
+            <div class="red-bar"></div>
+            <nav id="social-nav">
+                <ul>
+                    <li><a href="https://www.instagram.com/olya.devine/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://olgadevine.tumblr.com/" target="_blank" title="Tumblr"><i class="fab fa-tumblr"></i></a></li>
+                    <li><a href="https://www.pinterest.com/devineolya/" target="_blank" title="Pinterest"><i class="fab fa-pinterest"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/devineolga/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div class="content">
+        <main>
+            <article>
+                {{ content }}
+            </article>
+        </main>
+    </div>
+    <footer>
+        <a href="#" title="Back to top" class="back-to-top">
+            <i class="fas fa-chevron-circle-up"></i><br>
+        </a>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="{{ site.url }}/assets/slick/slick.min.js"></script>
+    <script src="{{ site.url }}/assets/js/script.js"></script>
+</body>
+</html>

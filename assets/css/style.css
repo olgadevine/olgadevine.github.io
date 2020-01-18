@@ -1,0 +1,511 @@
+/*
+ * Styles for olgadevine.com
+ */
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #e0e0e0;
+}
+
+h1, h2, h3, h4, #site-nav {
+    font-family: 'Playfair Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+hr {
+    position: relative;
+    margin: 2.75rem 0;
+    border: 0;
+    border-top: 1px solid #bcbcbc;
+}
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h1 a {
+    padding: 1rem;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 1.6;
+    text-transform: uppercase;
+    display: block;
+}
+
+#site-nav {
+    margin: 0;
+}
+
+#site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#site-nav ul li {
+    font-size: 1.4rem;
+}
+
+#site-nav ul li a {
+    padding: 0.5rem 0.2rem;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#social-nav {
+    margin: 0;
+}
+
+#social-nav ul {
+    margin: 0.5rem;
+    padding: 1rem 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+#social-nav ul li {
+    font-size: 1.5rem;
+    display: inline;
+}
+
+#social-nav ul li a {
+    padding: 0.4rem;
+    color: black;
+    text-decoration: none;
+}
+
+#social-nav ul li a:focus {
+    color:  rgb(192, 51, 51);
+}
+
+.red-bar {
+    position: relative;
+    margin: 1.5rem auto;
+    width: 100px;
+    height: 4px;
+    background-color: rgb(192, 51, 51);
+}
+
+main {
+    margin: 1.25rem;
+    margin-top: 2rem;
+    padding-bottom: 1.25rem;
+}
+
+main article h2 {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color:  rgb(192, 51, 51);
+    text-align: center;
+}
+
+main article h2 > a {
+    text-decoration: none;
+}
+
+main article figure {
+    margin: 0;
+    text-align: center;
+    line-height: 0;
+}
+
+main article figure figcaption {
+    margin: 1.5rem 0;
+}
+
+main article figure img {
+    max-width: 100%;
+    box-shadow: 2px 2px 10px #999;
+}
+
+main article {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+main article a {
+    color:  rgb(192, 51, 51);
+}
+main article ul li,
+main article ol li {
+    padding: 0.5rem 0;
+}
+footer {
+    margin-bottom: 2.23rem;
+    text-align: center;
+}
+footer a {
+    color: #888;
+    font-size: 2.3rem;
+    text-decoration: none;
+}
+
+/* Change built-in Slick next/prev arrows from white to black */
+.slick-prev:before,
+.slick-next:before
+{
+    /* color: white; */
+    color: black;
+}
+
+.portfolio-slider {
+    margin: 1.1rem;
+    padding: 1rem;
+    max-width: 400px;
+}
+
+.site-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.site-flex a img {
+    max-width: 100%;
+}
+.portfolio-container {
+    position: relative;
+    margin: 1rem;
+    width: 275px;
+    height: 275px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 10px #999;
+    display: inline-block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.portfolio-container:hover .overlay,
+.portfolio-container:focus .overlay {
+    opacity: 1;
+}
+.text {
+    margin: 0;
+    color: white;
+    font-size: 1.6rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.social-media-logo-header {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.social-media-header-text p:first-of-type {
+    margin-top: 2rem;
+}
+
+.sly {
+    display: none;
+}
+
+.photo-sly {
+    margin: -1.25rem 0 0 0;
+    font-size: 0.93rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+a img:hover {
+    opacity: 0.93;
+}
+
+.pagination {
+    overflow: hidden; /* clearfix */
+    margin: 1.5rem 0;
+    color: #ccc;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #ccc;
+}
+
+.pagination-item:first-child {
+    margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+    background-color: #ddd;
+    text-decoration: none;
+}
+
+.flex-50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-to-top {
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transition: 0.3s ease-in;
+}
+
+/* Added styles
+ * ************************************************************************ */
+.expandable_portfolio_links_toggle,
+.expandable_social_media_portfolio_links_toggle {
+    display: none;
+}
+
+.display--inline-block {
+    display: inline-block;
+}
+
+ul {
+    padding-left: 1em;
+}
+
+/* 'Tablet' view
+ * ************************************************************************ */
+@media only screen and (min-width: 768px) {
+    .side-bar {
+        position: fixed;
+        top: 2.6rem;
+        left: 2rem;
+        width: 300px;
+    }
+    .content {
+        margin-left: 330px;
+        padding: 1.5rem;
+        max-width: 800px;
+    }
+    footer {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        margin-bottom: 1.75rem;
+        width: 300px;
+    }
+    #site-nav ul li a:hover,
+    #site-nav ul li a:active,
+    #social-nav ul li a:hover,
+    #social-nav ul li a:active,
+    footer a:hover,
+    footer a:active {
+        color:  rgb(192, 51, 51);
+    }
+    main article a:hover,
+    main article a:active {
+        color:  black;
+    }
+    main article {
+        font-size: 1.1rem;
+    }
+    main article h2 {
+        padding-top: 0.3rem;
+        text-align: initial;
+    }
+    main article h2 > a:hover,
+    main article h2 > a:active {
+        color: inherit;
+        text-decoration: underline;
+    }
+    main article figure {
+        text-align: left;
+    }
+
+    .site-flex {
+        align-items: flex-start;
+    }
+
+    .portfolio-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sly {
+        margin: -1.5rem 0 -1.8rem 0;
+        text-align: right;
+        display: block;
+    }
+
+    .sly a {
+        font-size: 1rem;
+        font-weight: 300;
+        color: #555;
+    }
+
+}
+
+/* 'Laptop/desktop' view
+ * ************************************************************************ */
+@media only screen and (min-width: 1120px) {
+    .side-bar {
+        position: fixed;
+        top: 2.6rem;
+        left: 2rem;
+        width: 300px;
+    }
+    .content {
+        margin-left: 330px;
+        padding: 1.5rem;
+        max-width: 800px;
+    }
+    footer {
+        position: fixed;
+        bottom: 2rem;
+        left: 2rem;
+        margin-bottom: 1.75rem;
+        width: 300px;
+    }
+    #site-nav ul li a:hover,
+    #site-nav ul li a:active,
+    #social-nav ul li a:hover,
+    #social-nav ul li a:active,
+    footer a:hover,
+    footer a:active {
+        color:  rgb(192, 51, 51);
+    }
+    main article a:hover,
+    main article a:active {
+        color:  black;
+    }
+    main article {
+        font-size: 1.1rem;
+    }
+    main article h2 {
+        padding-top: 0.3rem;
+    }
+    main article h2 > a:hover,
+    main article h2 > a:active {
+        color: inherit;
+        text-decoration: underline;
+    }
+    main article figure {
+        text-align: left;
+    }
+
+    .text {
+        font-size: 1.4rem;
+    }
+
+    .site-flex {
+        flex-direction: row;
+    }
+
+    .portfolio-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .social-media-logo-header {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .social-media-logo-header > * {
+        width: 50%;
+        flex: 1;
+    }
+
+    .social-media-logo-header figure {
+        text-align: right;
+    }
+    
+    .social-media-logo-header > * {
+        width: 100%;
+    }
+    
+    .social-media-header-text {
+        margin-right: 1rem;
+    }
+    
+    .social-media-header-text p:first-of-type {
+        margin-top: 0;
+    }
+
+    .pagination {
+        margin: 3rem 0;
+    }
+    .pagination-item {
+        float: left;
+        width: 50%;
+    }
+    .pagination-item:first-child {
+        margin-bottom: 0;
+        border-top-left-radius:    4px;
+        border-bottom-left-radius: 4px;
+    }
+    .pagination-item:last-child {
+        margin-left: -1px;
+        border-top-right-radius:    4px;
+        border-bottom-right-radius: 4px;
+    }
+
+    .flex-50 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .flex-50 > figure {
+        width: 40%;
+    }
+
+    .flex-50 > div {
+        width: 50%;
+    }
+
+    .flex-50 p:first-of-type {
+        margin-top: 0;
+    }
+
+    .figure-personal-pic {
+        margin: 0 1.5rem 1.5rem 0;
+    }
+
+}
