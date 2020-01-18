@@ -1,4 +1,4 @@
-url: https://olgadevine.github.io
+url: https://olgadevine.com
 permalink: /:categories/:title/
 plugins:
   - jekyll-redirect-from
