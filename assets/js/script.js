@@ -8,7 +8,6 @@
 window.onload = function () {
     // Initialize slick.js
     $('.portfolio-slider').slick({
-        dots: true,
         autoplay: true
     });
     // Make visable the back-to-top button when page is scrolled

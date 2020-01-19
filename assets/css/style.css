@@ -295,10 +295,6 @@ a.pagination-item:hover {
     transition: 0.3s ease-in;
 }
 
-.slick-dots {
-    display: none;
-}
-
 /* Added styles
  * ************************************************************************ */
 .expandable_portfolio_links_toggle,
@@ -383,11 +379,6 @@ ul {
         font-weight: 300;
         color: #555;
     }
-
-    .slick-dots {
-        display: block;
-    }
-    
 
 }
 
